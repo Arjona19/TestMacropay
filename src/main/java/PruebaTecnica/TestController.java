@@ -114,7 +114,7 @@ public class TestController {
 
         contactsList = Arrays.asList(mapper.readValue(new String(Files.readAllBytes(Paths.get(path + jsonLocation))), Contact[].class));
 
-        Predicate<Contact> filter = contact -> contact.id == contact_id;
+        Predicate<Contact> filter = contact -> contact.id == contact_id
 
         contactsFiltred = contactsList.stream().filter(filter).toList();
 
