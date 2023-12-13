@@ -116,7 +116,7 @@ public class TestController {
 
         Predicate<Contact> filter = contact -> contact.id == contact_id;
 
-        contactsFiltred = contactsList.stream().filter(filter).toList()
+        contactsFiltred = contactsList.stream().filter(filter).toList();
 
         if (contactsFiltred.isEmpty()){
             return ResponseEntity.notFound()
