@@ -68,7 +68,7 @@ public class TestController {
 
     @DeleteMapping("/delete/{contact_id}")
     public ResponseEntity<Object> deleteContact (@PathVariable int contact_id) throws IOException {
-        String path = System.getProperty("user.dirr");
+        String path = System.getProperty("user.dir");
         log.info("Location:"+ path + jsonLocation);
         List<Contact> contactsList = new ArrayList<>();
         List<Contact> contactsFiltred = new ArrayList<>();
