@@ -107,7 +107,7 @@ public class TestController {
     @GetMapping("/get/{contact_id}")
     public ResponseEntity<Object> getContact(@PathVariable int contact_id) throws IOException {
         String path = System.getProperty("user.dir");
-        log.info("Location:"+ path + jsonLocation);
+        log.info("Location::"+ path + jsonLocation);
         List<Contact> contactsList = new ArrayList<>();
         List<Contact> contactsFiltred = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
