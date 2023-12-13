@@ -120,7 +120,7 @@ public class TestController {
 
         if (contactsFiltred.isEmpty()){
             return ResponseEntity.notFound()
-                    .header("Content-Type", "application/json").build();
+                    .header("Content-Type", "application/json").build()
         }
 
         return ResponseEntity.ok().
