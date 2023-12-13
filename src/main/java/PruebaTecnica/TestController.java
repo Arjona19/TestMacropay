@@ -98,7 +98,7 @@ public class TestController {
             fileWriter.close();
         }else{
             return ResponseEntity.notFound()
-                    .header("Content-Type", "application//json").build();
+                    .header("Content-Type", "application/json").build();
         }
 
         return (ResponseEntity<Object>) ResponseEntity.noContent().
@@ -107,7 +107,7 @@ public class TestController {
     @GetMapping("/get/{contact_id}")
     public ResponseEntity<Object> getContact(@PathVariable int contact_id) throws IOException {
         String path = System.getProperty("user.dir");
-        log.info("Location::"+ path + jsonLocation);
+        log.info("Location:"+ path + jsonLocation);
         List<Contact> contactsList = new ArrayList<>();
         List<Contact> contactsFiltred = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
