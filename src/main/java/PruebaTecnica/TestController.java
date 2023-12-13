@@ -98,7 +98,7 @@ public class TestController {
             fileWriter.close();
         }else{
             return ResponseEntity.notFound()
-                    .header("Content-Type", "application/json").build();
+                    .header("Content-Type", "application//json").build();
         }
 
         return (ResponseEntity<Object>) ResponseEntity.noContent().
